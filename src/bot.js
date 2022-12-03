@@ -13,19 +13,17 @@ client.on("ready", () => {
 
 client.on("interactionCreate", async interaction => {
   const { commandName, options, isChatInputCommand, user } = interaction;
-
-  console.log(user);
-
+  
   if (!isChatInputCommand) return;
 
   switch (commandName) { 
     // Comando /saldo
     case SALDO.name: {
       const num_tarjeta = options.getInteger("tarjeta");
-      const response = await request(`${api}/tarjeta/${num_tarjeta}`);
-      const { status, tarjeta } = await response.body.json();
+      const { body, statusCode } = await request(`${api}/tarjeta/${num_tarjeta}`);
+      const { status, tarjeta } = await body.json();
 
-      if (response.statusCode === 200 && status === "ok") {
+      if (statusCode === 200 && status === "ok") {
         await interaction.reply(`<@${user.id}>: \`${num_tarjeta}\`. Tu saldo es de \`B/. ${tarjeta.saldo}\`, Último uso en \`${tarjeta.fecha}\`.`);
       }
       else {
