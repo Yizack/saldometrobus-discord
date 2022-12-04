@@ -1,6 +1,6 @@
 name = "saldometrobus-discord"
 main = "src/server.js"
-compatibility_date = "2022-12-03"
+compatibility_date = "2022-12-04"
 usage_model = "bundled"
 
 [triggers]
