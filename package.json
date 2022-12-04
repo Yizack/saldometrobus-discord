@@ -1,0 +1,22 @@
+{
+  "name": "saldometrobus-discord",
+  "version": "1.0.0",
+  "description": "Bot de discord para consultar saldo de tarjeta de transporte público de la Ciudad de Panamá.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/bot.js",
+    "register": "node src/register.js"
+  },
+  "author": "Yizack Rangel",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "undici": "^5.13.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "eslint": "^8.29.0",
+    "nodemon": "^2.0.20"
+  }
+}
