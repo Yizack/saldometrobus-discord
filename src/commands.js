@@ -1,3 +1,6 @@
+/**
+ * Bot Slash Commands
+ */
 export const SALDO = {
   name: "saldo",
   description: "Verifica tu saldo",

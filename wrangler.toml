@@ -1,0 +1,13 @@
+name = "saldometrobus-discord"
+main = "src/server.js"
+compatibility_date = "2022-12-03"
+usage_model = "bundled"
+
+[triggers]
+crons = [ ]
+
+# [secrets]
+# DISCORD_TOKEN
+# DISCORD_PUBLIC_KEY
+# DISCORD_APPLICATION_ID
+# DISCORD_TEST_GUILD_ID

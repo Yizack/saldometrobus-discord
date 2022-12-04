@@ -1,3 +1,6 @@
+/**
+ * Register slash commands with a local run
+ */
 import { REST, Routes } from "discord.js";
 import { SALDO } from "./commands.js";
 import * as dotenv from "dotenv";
